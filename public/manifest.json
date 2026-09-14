@@ -1,0 +1,16 @@
+{
+  "short_name": "DoodlePop",
+  "name": "DoodlePop: Kids Drawing & Coloring Fun",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512 any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFBEB",
+  "theme_color": "#FF66C4",
+  "display": "standalone",
+  "orientation": "any"
+}

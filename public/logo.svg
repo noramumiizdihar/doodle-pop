@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="popGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF66C4" />
+      <stop offset="50%" stop-color="#FFDE59" />
+      <stop offset="100%" stop-color="#5CE1E6" />
+    </linearGradient>
+    <filter id="popShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#8C52FF" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="#FFF9E6"/>
+  <!-- Palette background -->
+  <path d="M 256 60 C 140 60 50 150 50 266 C 50 380 140 450 256 450 C 290 450 310 425 310 395 C 310 382 305 370 297 360 C 288 350 282 338 282 322 C 282 290 310 265 342 265 L 390 265 C 430 265 462 233 462 193 C 462 120 370 60 256 60 Z" fill="url(#popGrad)" filter="url(#popShadow)" stroke="#4A154B" stroke-width="12" stroke-linejoin="round"/>
+  <!-- Palette Paint Blobs -->
+  <circle cx="150" cy="170" r="32" fill="#FF5757" stroke="#4A154B" stroke-width="8"/>
+  <circle cx="230" cy="130" r="30" fill="#FF914D" stroke="#4A154B" stroke-width="8"/>
+  <circle cx="310" cy="140" r="34" fill="#7ED957" stroke="#4A154B" stroke-width="8"/>
+  <circle cx="380" cy="200" r="30" fill="#38B6FF" stroke="#4A154B" stroke-width="8"/>
+  <circle cx="170" cy="270" r="28" fill="#8C52FF" stroke="#4A154B" stroke-width="8"/>
+  <!-- Cute Face in center -->
+  <ellipse cx="220" cy="225" rx="8" ry="12" fill="#4A154B"/>
+  <ellipse cx="270" cy="225" rx="8" ry="12" fill="#4A154B"/>
+  <circle cx="218" cy="220" r="3" fill="#FFFFFF"/>
+  <circle cx="268" cy="220" r="3" fill="#FFFFFF"/>
+  <path d="M 232 245 Q 245 260 258 245" fill="none" stroke="#4A154B" stroke-width="6" stroke-linecap="round"/>
+  <!-- Rosy cheeks -->
+  <circle cx="204" cy="238" r="8" fill="#FF5757" opacity="0.6"/>
+  <circle cx="286" cy="238" r="8" fill="#FF5757" opacity="0.6"/>
+  <!-- Sparkles -->
+  <path d="M 100 90 L 105 105 L 120 110 L 105 115 L 100 130 L 95 115 L 80 110 L 95 105 Z" fill="#FFDE59"/>
+  <path d="M 400 370 L 404 382 L 416 386 L 404 390 L 400 402 L 396 390 L 384 386 L 396 382 Z" fill="#FF66C4"/>
+</svg>
