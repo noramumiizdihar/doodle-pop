@@ -68,6 +68,22 @@ export const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
   // Sparkle particles state for Magic Rainbow brush
   const [sparkles, setSparkles] = useState<SparkleParticle[]>([]);
 
+  // Keep props in refs to avoid re-render loops and stale closures
+  const onCanvasChangeRef = useRef(onCanvasChange);
+  onCanvasChangeRef.current = onCanvasChange;
+
+  const canUndoChangeRef = useRef(canUndoChange);
+  canUndoChangeRef.current = canUndoChange;
+
+  const canRedoChangeRef = useRef(canRedoChange);
+  canRedoChangeRef.current = canRedoChange;
+
+  const backgroundColorRef = useRef(backgroundColor);
+  backgroundColorRef.current = backgroundColor;
+
+  const isInitializedRef = useRef<boolean>(false);
+  const prevTemplateRef = useRef<string | undefined>(templateSvg);
+
   // Push snapshot to undo stack
   const saveSnapshot = useCallback(() => {
     const canvas = canvasRef.current;
@@ -89,12 +105,12 @@ export const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
       historyStepRef.current++;
     }
 
-    canUndoChange(historyStepRef.current > 0);
-    canRedoChange(historyStepRef.current < historyRef.current.length - 1);
+    canUndoChangeRef.current(historyStepRef.current > 0);
+    canRedoChangeRef.current(historyStepRef.current < historyRef.current.length - 1);
 
     // Notify parent for autosave
-    onCanvasChange(canvas.toDataURL('image/png'));
-  }, [canUndoChange, canRedoChange, onCanvasChange]);
+    onCanvasChangeRef.current(canvas.toDataURL('image/png'));
+  }, []);
 
   // Handle Undo
   const handleUndo = useCallback(() => {
@@ -108,12 +124,12 @@ export const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
     const imgData = historyRef.current[historyStepRef.current];
     if (imgData) {
       ctx.putImageData(imgData, 0, 0);
-      onCanvasChange(canvas.toDataURL('image/png'));
+      onCanvasChangeRef.current(canvas.toDataURL('image/png'));
     }
 
-    canUndoChange(historyStepRef.current > 0);
-    canRedoChange(historyStepRef.current < historyRef.current.length - 1);
-  }, [canUndoChange, canRedoChange, onCanvasChange]);
+    canUndoChangeRef.current(historyStepRef.current > 0);
+    canRedoChangeRef.current(historyStepRef.current < historyRef.current.length - 1);
+  }, []);
 
   // Handle Redo
   const handleRedo = useCallback(() => {
@@ -127,12 +143,60 @@ export const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
     const imgData = historyRef.current[historyStepRef.current];
     if (imgData) {
       ctx.putImageData(imgData, 0, 0);
-      onCanvasChange(canvas.toDataURL('image/png'));
+      onCanvasChangeRef.current(canvas.toDataURL('image/png'));
     }
 
-    canUndoChange(historyStepRef.current > 0);
-    canRedoChange(historyStepRef.current < historyRef.current.length - 1);
-  }, [canUndoChange, canRedoChange, onCanvasChange]);
+    canUndoChangeRef.current(historyStepRef.current > 0);
+    canRedoChangeRef.current(historyStepRef.current < historyRef.current.length - 1);
+  }, []);
+
+  // Render template SVG onto canvas
+  const renderTemplate = useCallback((svgStr: string) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // Fill white background first so canvas isn't transparent (vital for flood fill)
+    ctx.fillStyle = backgroundColorRef.current || '#FFFFFF';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Ensure proper SVG namespace and dimensions
+    let cleanSvg = svgStr.trim();
+    if (!cleanSvg.includes('xmlns=')) {
+      cleanSvg = cleanSvg.replace(/<svg\b/i, '<svg xmlns="http://www.w3.org/2000/svg"');
+    }
+    if (!/<svg[^>]*\bwidth\s*=/i.test(cleanSvg)) {
+      cleanSvg = cleanSvg.replace(/<svg\b/i, '<svg width="1200" height="1200"');
+    }
+
+    const img = new Image();
+    const dataUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(cleanSvg)}`;
+
+    img.onload = () => {
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      saveSnapshot();
+    };
+
+    img.onerror = () => {
+      // Fallback via Blob URL
+      try {
+        const blob = new Blob([cleanSvg], { type: 'image/svg+xml;charset=utf-8' });
+        const blobUrl = URL.createObjectURL(blob);
+        const fallbackImg = new Image();
+        fallbackImg.onload = () => {
+          ctx.drawImage(fallbackImg, 0, 0, canvas.width, canvas.height);
+          URL.revokeObjectURL(blobUrl);
+          saveSnapshot();
+        };
+        fallbackImg.src = blobUrl;
+      } catch (err) {
+        console.error('Error rendering template SVG fallback:', err);
+      }
+    };
+
+    img.src = dataUrl;
+  }, [saveSnapshot]);
 
   // Handle Clear
   const handleClear = useCallback(() => {
@@ -141,14 +205,15 @@ export const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = backgroundColorRef.current || '#FFFFFF';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
     if (templateSvg) {
       // Re-render template onto canvas
       renderTemplate(templateSvg);
     } else {
       saveSnapshot();
     }
-  }, [templateSvg, saveSnapshot]);
+  }, [templateSvg, renderTemplate, saveSnapshot]);
 
   // Respond to triggers from Navbar
   useEffect(() => {
@@ -163,52 +228,46 @@ export const DrawingCanvas: React.FC<DrawingCanvasProps> = ({
     if (clearTrigger && clearTrigger > 0) handleClear();
   }, [clearTrigger, handleClear]);
 
-  // Render template SVG onto canvas
-  const renderTemplate = useCallback((svgStr: string) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const img = new Image();
-    const blob = new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-
-    img.onload = () => {
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-      URL.revokeObjectURL(url);
-      saveSnapshot();
-    };
-    img.src = url;
-  }, [saveSnapshot]);
-
-  // Initialize Canvas resolution and initial data
+  // Initialize Canvas resolution and initial data (runs once per canvas instance)
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    // Logical canvas resolution (crisp 1200x1200 high-res)
-    canvas.width = 1200;
-    canvas.height = 1200;
+    if (!isInitializedRef.current) {
+      // Logical canvas resolution (crisp 1200x1200 high-res)
+      canvas.width = 1200;
+      canvas.height = 1200;
+      isInitializedRef.current = true;
 
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
 
-    if (initialCanvasData) {
-      const img = new Image();
-      img.onload = () => {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.drawImage(img, 0, 0);
+      if (initialCanvasData) {
+        const img = new Image();
+        img.onload = () => {
+          ctx.fillStyle = backgroundColorRef.current || '#FFFFFF';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(img, 0, 0);
+          saveSnapshot();
+        };
+        img.src = initialCanvasData;
+      } else if (templateSvg) {
+        renderTemplate(templateSvg);
+      } else {
+        ctx.fillStyle = backgroundColorRef.current || '#FFFFFF';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
         saveSnapshot();
-      };
-      img.src = initialCanvasData;
-    } else if (templateSvg) {
-      renderTemplate(templateSvg);
-    } else {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      saveSnapshot();
+      }
     }
   }, [templateSvg, initialCanvasData, renderTemplate, saveSnapshot]);
+
+  // Respond to templateSvg changes after initialization
+  useEffect(() => {
+    if (isInitializedRef.current && templateSvg && templateSvg !== prevTemplateRef.current) {
+      prevTemplateRef.current = templateSvg;
+      renderTemplate(templateSvg);
+    }
+  }, [templateSvg, renderTemplate]);
 
   // Merge raster and sticker objects for export
   useEffect(() => {

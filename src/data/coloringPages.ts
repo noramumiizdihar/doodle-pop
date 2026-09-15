@@ -46,7 +46,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Animals',
     title: 'Happy Puppy & Ball',
     emoji: '🐶',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <ellipse cx="250" cy="350" rx="100" ry="80" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <ellipse cx="250" cy="350" rx="60" ry="50" fill="#FFFFFF" stroke="#222222" stroke-width="6"/>
@@ -74,7 +74,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Animals',
     title: 'Playful Kitty & Yarn',
     emoji: '🐱',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <ellipse cx="230" cy="330" rx="90" ry="90" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <ellipse cx="230" cy="330" rx="55" ry="55" fill="#FFFFFF" stroke="#222222" stroke-width="6"/>
@@ -106,7 +106,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Animals',
     title: 'Bunny & Giant Carrot',
     emoji: '🐰',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <ellipse cx="220" cy="350" rx="95" ry="85" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <ellipse cx="175" cy="110" rx="28" ry="85" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -136,7 +136,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Animals',
     title: 'Teddy Bear & Honey Pot',
     emoji: '🐻',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <circle cx="160" cy="120" r="40" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <circle cx="160" cy="120" r="22" fill="#FFFFFF" stroke="#222222" stroke-width="6"/>
@@ -164,7 +164,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Animals',
     title: 'Sunny Roaring Lion',
     emoji: '🦁',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Huge Mane -->
       <g fill="#FFFFFF" stroke="#222222" stroke-width="8">
@@ -202,7 +202,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Animals',
     title: 'Baby Elephant Splash',
     emoji: '🐘',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Body -->
       <ellipse cx="280" cy="320" rx="120" ry="95" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -233,7 +233,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Cute Things',
     title: 'Smiling Cherry Cupcake',
     emoji: '🧁',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <polygon points="150,260 180,440 320,440 350,260" fill="#FFFFFF" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
       <line x1="200" y1="265" x2="215" y2="435" stroke="#222222" stroke-width="5"/>
@@ -256,7 +256,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Cute Things',
     title: 'Kawaii Boba Milk Tea',
     emoji: '🧋',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <rect x="235" y="40" width="30" height="150" fill="#FFFFFF" stroke="#222222" stroke-width="7" rx="6" transform="rotate(10, 250, 100)"/>
       <ellipse cx="250" cy="150" rx="130" ry="25" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -279,7 +279,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Cute Things',
     title: 'Panda & Bamboo Shoot',
     emoji: '🐼',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Bamboo -->
       <rect x="360" y="50" width="30" height="400" rx="8" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -315,7 +315,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Cute Things',
     title: 'Wish Upon a Cloud Star',
     emoji: '⭐',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Soft Cloud Base -->
       <path d="M 120 400 Q 80 400 80 360 Q 80 320 130 320 Q 150 280 210 280 Q 250 280 270 310 Q 320 290 360 320 Q 400 320 400 360 Q 400 400 360 400 Z" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -337,7 +337,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Ocean',
     title: 'Jumping Ocean Dolphin',
     emoji: '🐬',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Sun in Sky -->
       <circle cx="420" cy="90" r="45" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -360,7 +360,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Ocean',
     title: 'Clownfish & Seaweed',
     emoji: '🐠',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Seaweed on left -->
       <path d="M 60 460 Q 40 320 80 200 Q 50 120 70 50" fill="none" stroke="#222222" stroke-width="12" stroke-linecap="round"/>
@@ -387,7 +387,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Ocean',
     title: 'Swimming Sea Turtle',
     emoji: '🐢',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 180 180 C 130 120 70 120 80 160 C 100 210 160 230 180 210 Z" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
       <path d="M 320 180 C 370 120 430 120 420 160 C 400 210 340 230 320 210 Z" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -408,7 +408,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Ocean',
     title: 'Friendly Pirate Octopus',
     emoji: '🐙',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Pirate Hat -->
       <polygon points="160,140 250,50 340,140 250,120" fill="#FFFFFF" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
@@ -436,7 +436,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Dinosaurs',
     title: 'Smiling Baby T-Rex',
     emoji: '🦖',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 160 300 C 70 340 50 250 40 220 C 70 280 140 330 180 350 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <ellipse cx="230" cy="300" rx="90" ry="100" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -456,7 +456,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Dinosaurs',
     title: 'Long Neck Bronto',
     emoji: '🦕',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 140 330 C 60 330 30 390 20 400 C 40 370 90 360 150 370 Z" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
       <ellipse cx="230" cy="330" rx="100" ry="75" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -476,7 +476,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Dinosaurs',
     title: 'Spiky Stegosaurus',
     emoji: '🦖',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Body -->
       <path d="M 120 360 C 130 220 350 220 360 360 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -501,7 +501,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Dinosaurs',
     title: 'Flying Pterodactyl',
     emoji: '🦕',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Giant Wings -->
       <path d="M 250 250 L 80 140 Q 140 260 220 270 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -523,7 +523,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Space',
     title: 'Cosmic Moon Rocket',
     emoji: '🚀',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <circle cx="400" cy="100" r="60" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
       <circle cx="380" cy="80" r="14" fill="#FFFFFF" stroke="#222222" stroke-width="4"/>
@@ -543,7 +543,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Space',
     title: 'Floating Child Astronaut',
     emoji: '🧑‍🚀',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <circle cx="250" cy="180" r="100" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <ellipse cx="250" cy="180" rx="70" ry="55" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -564,7 +564,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Space',
     title: 'Planet Saturn & Stars',
     emoji: '🪐',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Planet Sphere -->
       <circle cx="250" cy="250" r="110" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -586,7 +586,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Space',
     title: 'Friendly Alien in UFO',
     emoji: '🛸',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Glass Dome -->
       <path d="M 180 210 C 180 130 320 130 320 210 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -616,7 +616,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Fantasy',
     title: 'Magical Rainbow Unicorn',
     emoji: '🦄',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <ellipse cx="220" cy="340" rx="120" ry="85" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <path d="M 290 320 C 330 250 330 180 320 140 C 300 135 270 170 240 260 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -635,7 +635,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Fantasy',
     title: 'Baby Fire Dragon',
     emoji: '🐲',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <polygon points="200,200 80,120 130,240" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
       <ellipse cx="260" cy="320" rx="90" ry="100" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -658,7 +658,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Fantasy',
     title: 'Fluttering Garden Fairy',
     emoji: '🧚',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Fairy Wings -->
       <path d="M 220 200 C 130 90 70 120 100 210 C 120 260 190 240 220 220 Z" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -681,7 +681,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Fantasy',
     title: 'Bubbling Magic Potion',
     emoji: '🧪',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Cork Stopper -->
       <rect x="220" y="70" width="60" height="35" rx="6" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -705,7 +705,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Princess',
     title: 'Fairytale Princess Castle',
     emoji: '🏰',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <rect x="175" y="240" width="150" height="180" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <path d="M 215 420 L 215 340 C 215 310 285 310 285 340 L 285 420 Z" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -723,7 +723,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Princess',
     title: 'Royal Princess Tiara',
     emoji: '👑',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <polygon points="80,380 90,180 180,270 250,100 320,270 410,180 420,380" fill="#FFFFFF" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
       <circle cx="250" cy="125" r="22" fill="#FFFFFF" stroke="#222222" stroke-width="6"/>
@@ -737,7 +737,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Princess',
     title: 'Royal Pumpkin Carriage',
     emoji: '🎠',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Pumpkin Cabin -->
       <circle cx="250" cy="240" r="120" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -760,7 +760,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Princess',
     title: 'Smiling Fairytale Princess',
     emoji: '👸',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Tiara -->
       <polygon points="225,90 235,60 250,75 265,60 275,90" fill="#FFFFFF" stroke="#222222" stroke-width="5"/>
@@ -787,7 +787,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Vehicles',
     title: 'Zoomy Buggy Car',
     emoji: '🚗',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 80 320 L 120 220 L 320 220 L 400 320 L 430 320 L 430 370 L 70 370 L 70 320 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
       <polygon points="140,235 225,235 225,305 105,305" fill="#FFFFFF" stroke="#222222" stroke-width="6"/>
@@ -804,7 +804,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Vehicles',
     title: 'Sky Airline Plane',
     emoji: '✈️',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <ellipse cx="250" cy="250" rx="180" ry="55" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <path d="M 370 230 Q 410 245 410 260 L 360 260 Z" fill="#FFFFFF" stroke="#222222" stroke-width="6"/>
@@ -821,7 +821,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Vehicles',
     title: 'Choo-Choo Steam Train',
     emoji: '🚂',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Tracks -->
       <line x1="30" y1="430" x2="470" y2="430" stroke="#222222" stroke-width="10"/>
@@ -846,7 +846,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Vehicles',
     title: 'Hero Fire Truck',
     emoji: '🚒',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <rect x="60" y="220" width="360" height="150" rx="14" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <!-- Cab window -->
@@ -871,7 +871,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Food',
     title: 'Cheesy Pepperoni Pizza',
     emoji: '🍕',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 120 120 Q 250 80 380 120 L 390 150 Q 250 110 110 150 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <polygon points="115,150 250,440 385,150" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -886,7 +886,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Food',
     title: 'Sweet Sprinkle Donut',
     emoji: '🍩',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <circle cx="250" cy="250" r="160" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <path d="M 120 250 C 130 180 180 120 250 120 C 320 120 370 180 380 250 C 370 290 350 280 330 310 C 310 340 280 330 260 360 C 230 330 210 350 180 340 C 150 330 130 290 120 250 Z" fill="#FFFFFF" stroke="#222222" stroke-width="6"/>
@@ -902,7 +902,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Food',
     title: 'Giant Tasty Burger',
     emoji: '🍔',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Top Bun -->
       <path d="M 110 200 C 110 80 390 80 390 200 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -925,7 +925,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Food',
     title: 'Double Scoop Sundae Cone',
     emoji: '🍦',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Waffle Cone -->
       <polygon points="250,450 170,270 330,270" fill="#FFFFFF" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
@@ -950,7 +950,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Nature',
     title: 'Big Sunny Apple Tree',
     emoji: '🌳',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 210 440 L 225 280 L 275 280 L 290 440 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <circle cx="250" cy="180" r="85" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -968,7 +968,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Nature',
     title: 'Rainbow & Fluffy Clouds',
     emoji: '🌈',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 100 350 A 150 150 0 0 1 400 350" fill="none" stroke="#222222" stroke-width="14"/>
       <path d="M 120 350 A 130 130 0 0 1 380 350" fill="none" stroke="#222222" stroke-width="14"/>
@@ -986,7 +986,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Nature',
     title: 'Tropical Beach & Palms',
     emoji: '🏝️',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Sun -->
       <circle cx="410" cy="90" r="45" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -1008,7 +1008,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Nature',
     title: 'Cute Mushroom Garden',
     emoji: '🍄',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Ground -->
       <line x1="30" y1="420" x2="470" y2="420" stroke="#222222" stroke-width="8"/>
@@ -1031,7 +1031,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Flowers',
     title: 'Happy Sunflower & Bee',
     emoji: '🌻',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 250 250 L 250 450" fill="none" stroke="#222222" stroke-width="12"/>
       <path d="M 250 360 Q 180 320 150 360 Q 200 400 250 370 Z" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -1060,7 +1060,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Flowers',
     title: 'Spring Tulip & Butterfly',
     emoji: '🌷',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 250 250 L 250 450" fill="none" stroke="#222222" stroke-width="12"/>
       <path d="M 250 350 Q 320 300 340 340 Q 300 400 250 380 Z" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -1078,7 +1078,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Flowers',
     title: 'Blooming Red Rose',
     emoji: '🌹',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <path d="M 250 250 Q 240 350 250 450" fill="none" stroke="#222222" stroke-width="12"/>
       <!-- Rose Petals Spiral -->
@@ -1094,7 +1094,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Flowers',
     title: 'Lotus Flower on Pond',
     emoji: '🪷',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Lilypad -->
       <ellipse cx="250" cy="380" rx="180" ry="50" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1114,7 +1114,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Houses',
     title: 'Cozy Garden Cottage',
     emoji: '🏡',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <rect x="130" y="240" width="240" height="180" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <polygon points="100,240 250,110 400,240" fill="#FFFFFF" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
@@ -1131,7 +1131,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Houses',
     title: 'Rustic Country Windmill',
     emoji: '🏠',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <polygon points="190,440 210,220 290,220 310,440" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <polygon points="200,220 250,160 300,220" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -1147,7 +1147,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Houses',
     title: 'Fairy Mushroom Cottage',
     emoji: '🍄',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Mushroom Cap Roof -->
       <path d="M 100 240 C 100 80 400 80 400 240 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1169,7 +1169,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Houses',
     title: 'Snowy Polar Igloo',
     emoji: '🧊',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Igloo Dome -->
       <path d="M 110 380 C 110 180 390 180 390 380 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1188,7 +1188,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Family',
     title: 'Loving Bear Family Hug',
     emoji: '👨‍👩‍👧',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <ellipse cx="190" cy="320" rx="90" ry="110" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <circle cx="190" cy="180" r="70" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1210,7 +1210,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Family',
     title: 'Mama Duck & Ducklings',
     emoji: '🦆',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Mama Duck -->
       <ellipse cx="160" cy="300" rx="80" ry="60" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1237,7 +1237,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Family',
     title: 'Bird Family in Treetop Nest',
     emoji: '🐦',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Nest -->
       <path d="M 120 320 C 120 440 380 440 380 320 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1263,7 +1263,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Seasons',
     title: 'Winter Snowman & Scarf',
     emoji: '⛄',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <circle cx="250" cy="360" r="100" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <circle cx="250" cy="200" r="75" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1288,7 +1288,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Seasons',
     title: 'Autumn Squirrel & Acorn',
     emoji: '🍁',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Giant Maple Leaf Background -->
       <polygon points="250,60 275,120 330,110 310,160 370,180 330,220 350,270 280,250 260,310 240,310 220,250 150,270 170,220 130,180 190,160 170,110 225,120" fill="#FFFFFF" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
@@ -1311,7 +1311,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Seasons',
     title: 'Spring Garden Blossom',
     emoji: '🦋',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Big Butterfly Wings -->
       <path d="M 250 220 C 180 80 40 140 100 270 C 130 340 210 300 250 250 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1334,7 +1334,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Seasons',
     title: 'Sunny Sandcastle Beach',
     emoji: '🏖️',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Big Smiling Sun -->
       <circle cx="90" cy="90" r="45" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -1364,7 +1364,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Holidays',
     title: 'Christmas Holiday Tree',
     emoji: '🎄',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <rect x="220" y="400" width="60" height="60" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <polygon points="250,110 320,200 280,200 360,290 310,290 400,400 100,400 190,290 140,290 220,200 180,200" fill="#FFFFFF" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
@@ -1380,7 +1380,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Holidays',
     title: 'Giant Surprise Gift Box',
     emoji: '🎁',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <rect x="130" y="210" width="240" height="210" rx="14" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
       <rect x="110" y="170" width="280" height="50" rx="10" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>
@@ -1396,7 +1396,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Holidays',
     title: 'Happy Halloween Pumpkin',
     emoji: '🎃',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Pumpkin Stem -->
       <polygon points="235,170 245,90 265,90 265,170" fill="#FFFFFF" stroke="#222222" stroke-width="7"/>
@@ -1418,7 +1418,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     category: 'Holidays',
     title: 'Decorated Easter Egg',
     emoji: '🥚',
-    svgContent: `<svg viewBox="0 0 500 500">
+    svgContent: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFFFF"/>
       <!-- Giant Egg Shape -->
       <path d="M 250 70 C 130 150 110 340 160 410 C 200 450 300 450 340 410 C 390 340 370 150 250 70 Z" fill="#FFFFFF" stroke="#222222" stroke-width="8"/>

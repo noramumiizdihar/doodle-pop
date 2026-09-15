@@ -24,7 +24,7 @@ export const ADVENTURES: AdventureWorld[] = [
     emoji: '🌲',
     description: 'Build a magical woodland full of friendly animals and ancient trees!',
     backgroundColor: '#ECFDF5',
-    backgroundSvg: `<svg viewBox="0 0 500 500">
+    backgroundSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#ECFDF5"/>
       <!-- Soft distant hills -->
       <path d="M 0 320 Q 150 280 300 310 T 500 290 L 500 500 L 0 500 Z" fill="#D1FAE5"/>
@@ -71,7 +71,7 @@ export const ADVENTURES: AdventureWorld[] = [
     emoji: '🌊',
     description: 'Dive under the rolling waves and create a vibrant coral reef kingdom!',
     backgroundColor: '#EFF6FF',
-    backgroundSvg: `<svg viewBox="0 0 500 500">
+    backgroundSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#EFF6FF"/>
       <!-- Water depth gradient layers -->
       <rect y="120" width="500" height="380" fill="#DBEAFE"/>
@@ -117,7 +117,7 @@ export const ADVENTURES: AdventureWorld[] = [
     emoji: '🚀',
     description: 'Blast off past glittering stars, ringed planets, and cosmic rockets!',
     backgroundColor: '#0F172A',
-    backgroundSvg: `<svg viewBox="0 0 500 500">
+    backgroundSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#0F172A"/>
       <!-- Starry dust -->
       <circle cx="80" cy="90" r="2" fill="#FFF" opacity="0.8"/>
@@ -165,7 +165,7 @@ export const ADVENTURES: AdventureWorld[] = [
     emoji: '🌋',
     description: 'Travel back in time to giant prehistoric ferns, volcanoes, and dinos!',
     backgroundColor: '#FEF3C7',
-    backgroundSvg: `<svg viewBox="0 0 500 500">
+    backgroundSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FEF3C7"/>
       <!-- Distant Smoking Volcano -->
       <polygon points="120,380 200,200 240,200 320,380" fill="#78350F"/>
@@ -211,7 +211,7 @@ export const ADVENTURES: AdventureWorld[] = [
     emoji: '🧚',
     description: 'A sparkling garden realm where fairies fly and mushrooms glow!',
     backgroundColor: '#FAF5FF',
-    backgroundSvg: `<svg viewBox="0 0 500 500">
+    backgroundSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FAF5FF"/>
       <!-- Magical rolling hills -->
       <path d="M 0 340 Q 200 300 350 330 T 500 320 L 500 500 L 0 500 Z" fill="#F3E8FF"/>

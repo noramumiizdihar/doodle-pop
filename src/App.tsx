@@ -640,6 +640,7 @@ export const App: React.FC = () => {
             {/* Multi-Touch Canvas */}
             <div className="flex-1 relative">
               <DrawingCanvas
+                key={currentArtworkId}
                 tool={tool}
                 color={color}
                 size={size}

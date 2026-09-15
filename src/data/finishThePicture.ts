@@ -12,7 +12,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'House Without Windows',
     prompt: 'Draw cozy windows and a fun door on this house!',
     emoji: '🏠',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFBEB"/>
       <!-- Ground -->
       <line x1="20" y1="420" x2="480" y2="420" stroke="#16A34A" stroke-width="12" stroke-linecap="round"/>
@@ -31,7 +31,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Lion Without Mane',
     prompt: 'Draw a big, wild, fluffy mane around this friendly lion!',
     emoji: '🦁',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FEF3C7"/>
       <!-- Head with cute face (waiting for mane around it) -->
       <circle cx="250" cy="250" r="95" fill="#FDE68A" stroke="#222222" stroke-width="8"/>
@@ -55,7 +55,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Butterfly Without Wings',
     prompt: 'Draw magnificent, colorful wings on this sweet butterfly!',
     emoji: '🦋',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#F0FDF4"/>
       <!-- Antennae -->
       <path d="M 240 180 Q 210 120 180 130" fill="none" stroke="#222222" stroke-width="6" stroke-linecap="round"/>
@@ -78,7 +78,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Car Without Wheels',
     prompt: 'Draw super-fast wheels so the car can zoom!',
     emoji: '🚗',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#EFF6FF"/>
       <!-- Road -->
       <line x1="30" y1="390" x2="470" y2="390" stroke="#334155" stroke-width="14" stroke-linecap="round"/>
@@ -94,7 +94,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Robot Without Arms',
     prompt: 'Draw cool robotic arms and gadgets for this bot!',
     emoji: '🤖',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#F8FAFC"/>
       <!-- Antenna -->
       <line x1="250" y1="90" x2="250" y2="130" stroke="#222222" stroke-width="7"/>
@@ -119,7 +119,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Cone Without Ice Cream',
     prompt: 'Draw giant, delicious scoops of your favorite ice cream flavors!',
     emoji: '🍦',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFF1F2"/>
       <!-- Crispy Waffle Cone (empty on top) -->
       <polygon points="250,450 170,260 330,260" fill="#F59E0B" stroke="#222222" stroke-width="8" stroke-linejoin="round"/>
@@ -135,7 +135,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Person Without Hair',
     prompt: 'Draw silly, wild, rainbow hair on this smiling face!',
     emoji: '🧑',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFFBEB"/>
       <!-- Head -->
       <ellipse cx="250" cy="270" rx="110" ry="130" fill="#FFD1BA" stroke="#222222" stroke-width="8"/>
@@ -159,7 +159,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Bare Apple Tree',
     prompt: 'Draw juicy red apples, sweet birds, or colorful fruit in the tree!',
     emoji: '🍎',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#F0FDF4"/>
       <!-- Trunk -->
       <path d="M 200 450 L 220 290 L 280 290 L 300 450 Z" fill="#78350F" stroke="#222222" stroke-width="8"/>
@@ -176,7 +176,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Clock Without Hands',
     prompt: 'Draw the clock hands to show what time it is!',
     emoji: '⏰',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#FFF7ED"/>
       <!-- Clock Bell ears -->
       <circle cx="150" cy="130" r="45" fill="#F59E0B" stroke="#222222" stroke-width="8"/>
@@ -200,7 +200,7 @@ export const FINISH_THE_PICTURE_TEMPLATES: FinishPictureDef[] = [
     title: 'Stem Without Flower',
     prompt: 'Draw the most magical, colorful flower head on this leafy stem!',
     emoji: '🌻',
-    svgBackground: `<svg viewBox="0 0 500 500">
+    svgBackground: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
       <rect width="500" height="500" fill="#F0FDF4"/>
       <!-- Ground -->
       <path d="M 0 440 Q 250 420 500 440 L 500 500 L 0 500 Z" fill="#86EFAC"/>
